@@ -17,7 +17,7 @@
   
   <main>
     <form id="order-form">
-      <label for="drink">Drink:</label>
+      <label for="drink"><strong>Drink:</strong></label>
       <select id="drink">
         <option value="" disabled selected>Select a drink</option>
         <option value="Latte">Latte</option>
@@ -25,17 +25,17 @@
         <option value="Americano">Americano</option>
       </select>
     
-      <label>Extras:</label>
+      <label><strong>Extras:</strong></label>
       <label><input type="checkbox" name="options" value="Extra Shot"> Extra Shot</label>
       <label><input type="checkbox" name="options" value="Soy Milk"> Soy Milk</label>
       <label><input type="checkbox" name="options" value="Whipped Cream"> Whipped Cream</label>
     
-      <label>Size:</label>
+      <label><strong>Size:</strong></label>
       <label><input type="radio" name="size" value="Small"> Small</label>
       <label><input type="radio" name="size" value="Medium"> Medium</label>
       <label><input type="radio" name="size" value="Large"> Large</label>
     
-      <label for="sweetener">Sweetener:</label>
+      <label for="sweetener"><strong>Sweetener:</strong></label>
       <select id="sweetener">
         <option value="" disabled selected>Select sweetener</option>
         <option value="Sugar">Sugar</option>
@@ -43,21 +43,24 @@
         <option value="None">None</option>
       </select>
 
-      <label for="sweetness-level">Sweetness Level:</label>
+      <label for="sweetness-level"><strong>Sweetness Level:</strong></label>
       <input type="range" id="sweetness-level" name="sweetness-level" min="0" max="10" step="1" value="5">
       <span id="sweetness-value">5</span>
     
-      <label for="instructions">Special Instructions:</label>
+      <label for="instructions"><strong>Special Instructions:</strong></label>
       <textarea id="instructions" placeholder="Extra hot, no foam, etc."></textarea>
 
-      <label for="pickup-date">Pickup Date:</label>
+      <label for="pickup-date"><strong>Pickup Date:</strong></label>
       <input type="date" id="pickup-date" name="pickup-date">
 
-      <label for="pickup-time">Pickup Time:</label>
+      <label for="pickup-time"><strong>Pickup Time:</strong></label>
       <input type="time" id="pickup-time" name="pickup-time">
     
       <button type="submit">Submit Order</button>
       <button type="button" id="load-order">Load Last Order</button>
+
+      <p>This order form is now mobile friendly! 😊</p>
+
     </form>
     
     <pre id="edited-order"></pre>
@@ -70,5 +73,6 @@
 </body>
 </html>
 
+  
   
   
