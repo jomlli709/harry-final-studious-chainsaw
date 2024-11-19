@@ -17,44 +17,51 @@
   
   <main>
     <form id="order-form">
-      <label for="sandwich"><strong>Sandwich:</strong></label>
-      <input type="text" id="sandwich" name="sandwich" placeholder="Type of Sandwich">
-
-      <label>Options:</label>
-      <label>
-        Lettuce
-        <input type="checkbox" name="options" value="Lettuce">
-      </label>
-      <label>
-        Tomato
-        <input type="checkbox" name="options" value="Tomato">
-      </label>
-      <label>
-        Half
-        <input type="radio" name="cut" value="Half">
-      </label>
-      <label>
-        Whole
-        <input type="radio" name="cut" value="Whole">
-      </label><br>
-
-      <label for="drink"><strong>Drink:</strong></label>
+      <label for="drink">Drink:</label>
       <select id="drink">
         <option value="" disabled selected>Select a drink</option>
-        <option value="Iced Tea">Iced Tea</option>
-        <option value="Water">Water</option>
+        <option value="Latte">Latte</option>
+        <option value="Cappuccino">Cappuccino</option>
+        <option value="Americano">Americano</option>
+      </select>
+    
+      <label>Extras:</label>
+      <label><input type="checkbox" name="options" value="Extra Shot"> Extra Shot</label>
+      <label><input type="checkbox" name="options" value="Soy Milk"> Soy Milk</label>
+      <label><input type="checkbox" name="options" value="Whipped Cream"> Whipped Cream</label>
+    
+      <label>Size:</label>
+      <label><input type="radio" name="size" value="Small"> Small</label>
+      <label><input type="radio" name="size" value="Medium"> Medium</label>
+      <label><input type="radio" name="size" value="Large"> Large</label>
+    
+      <label for="sweetener">Sweetener:</label>
+      <select id="sweetener">
+        <option value="" disabled selected>Select sweetener</option>
+        <option value="Sugar">Sugar</option>
+        <option value="Honey">Honey</option>
+        <option value="None">None</option>
       </select>
 
-      <label for="instructions"><strong>Special Instructions:</strong></label>
-      <textarea id="instructions" placeholder="i.e. extra napkins"></textarea>
+      <label for="sweetness-level">Sweetness Level:</label>
+      <input type="range" id="sweetness-level" name="sweetness-level" min="0" max="10" step="1" value="5">
+      <span id="sweetness-value">5</span>
+    
+      <label for="instructions">Special Instructions:</label>
+      <textarea id="instructions" placeholder="Extra hot, no foam, etc."></textarea>
 
+      <label for="pickup-date">Pickup Date:</label>
+      <input type="date" id="pickup-date" name="pickup-date">
+
+      <label for="pickup-time">Pickup Time:</label>
+      <input type="time" id="pickup-time" name="pickup-time">
+    
+      <button type="submit">Submit Order</button>
       <button type="button" id="load-order">Load Last Order</button>
-      <button type="submit">Submit</button>
     </form>
-
-    <section id="edited-order-output">
-      <h2>Edited Order:</h2>
-      <pre id="edited-order"></pre>
+    
+    <pre id="edited-order"></pre>
+    
     </section>
   </main>
 
@@ -63,4 +70,5 @@
 </body>
 </html>
 
+  
   
