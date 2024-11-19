@@ -67,4 +67,11 @@ body {
       width: 90%;
     }
   }
+
+  p {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
   
